@@ -11,7 +11,7 @@
 - **Replayability**: Experience different outcomes based on your choices for each gameplay.
 
 ## How to Play
-1. Visit the live site: 
+1. Visit the live site: https://wineynia.github.io/jungle-adventure/
 2. Enter your name in the input field.
 3. Choose your path by typing **'jungle'** or **'river'** in the specified input.
 4. Follow the on-screen prompts to make choices that guide your adventure.
