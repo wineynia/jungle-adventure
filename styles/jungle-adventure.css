@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+.intro h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+.player-inputs {
+  width: 100%;
+}
+
+.username1,
+.username2 {
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.pathButtons,
+.firstChoiceButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.health,
+.message,
+.playStats {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.replay {
+  display: block;
+  margin-top: 20px;
+  background-color: #ffc107;
+}
+
+.replay:hover {
+  background-color: #e0a800;
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .intro h1 {
+    font-size: 2.2em;
+  }
+
+  .username1,
+  .username2 {
+    font-size: 16px;
+  }
+
+  button {
+    min-width: 150px;
+    font-size: 16px;
+  }
+
+  .health,
+  .message,
+  .playStats {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .intro h1 {
+    font-size: 2.5em;
+  }
+
+  button {
+    min-width: 180px;
+  }
+}
