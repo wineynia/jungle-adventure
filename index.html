@@ -1,20 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🦧 Jungle Adventure</title>
     <link rel="stylesheet" href="./styles/jungle-adventure.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/jungle-adventure.js" defer></script>
-</head>
-<body>
-    <div class="container">
-        <h1>🌴Jungle Adventure 🦧</h1>
-        <div class="player-inputs">
-            <label for="username1">Player name:</label>
-            <input type="text" class="username1" required />
-        </div>
-        <button class="start">Start Game</button>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">🦧 Jungle Adventure 🌿</h1>
+      <p class="subtitle">Choose wisely and survive the jungle!</p>
+    </header>
+
+    <div class="status-bar">
+      <p class="status-path">Path: none</p>
+      <p class="status-health">Hearts: ❤️❤️❤️</p>
     </div>
-</body>
+
+    <main class="game">
+      <div class="status-bar">
+        <p class="status-path">Path: none</p>
+        <p class="status-health">Hearts: ❤️❤️❤️</p>
+      </div>
+
+      <section class="intro screen active">
+        <p>Welcome, adventurer! Enter your name to begin your journey.</p>
+        <input
+          type="text"
+          class="input-name"
+          id="playerName"
+          name="playerName"
+          placeholder="Your name..."
+          autocomplete="name"
+        />
+        <button class="btn start-btn">Start Adventure</button>
+      </section>
+
+      <section class="choice screen">
+        <h2 class="game-message">Choose your path:</h2>
+        <div class="choices">
+          <button class="btn path" data-choice="jungle">🌳 Jungle</button>
+          <button class="btn path" data-choice="river">🌊 River</button>
+        </div>
+      </section>
+
+      <section class="riddle screen">
+        <h2 class="riddle-question"></h2>
+        <input
+          type="text"
+          class="riddle-answer"
+          id="riddleAnswer"
+          name="riddleAnswer"
+          placeholder="Your answer..."
+          autocomplete="off"
+        />
+        <button class="btn submit-answer">Submit</button>
+      </section>
+
+      <section class="result screen">
+        <h2 class="final-message"></h2>
+        <p class="stats"></p>
+        <button class="btn replay-btn">Replay</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; GWA 2025</p>
+    </footer>
+  </body>
 </html>
